@@ -1,4 +1,4 @@
-/* Todos os commits serão comentados para facilitar a compreensão do que foi alterado */
+/* A maioria das alterações dos commits serão comentadas para facilitar a compreensão do que foi alterado */
 
 import React, { useState } from 'react';
 import './App.css';
@@ -31,12 +31,10 @@ function App() {
     'Domingo': { manha: '', tarde: '', noite: '' },
   });
 
+
   const [atividade, setAtividade] = useState('');
   const [diaSelecionado, setDiaSelecionado] = useState('Segunda-feira');
   const [periodoSelecionado, setPeriodoSelecionado] = useState('manha');
-
- 
-
 
   const adicionarAtividade = () => {
     if (!atividade) return;
@@ -49,9 +47,11 @@ function App() {
       },
     }));
 
+
     // Limpar os campos após adicionar
     setAtividade('');
   };
+
 
   return (
     <div className="app-container">
@@ -65,12 +65,14 @@ function App() {
           ))}
         </select>
 
+
         <label>Período:</label>
         <select value={periodoSelecionado} onChange={(e) => setPeriodoSelecionado(e.target.value)}>
           <option value="manha">Manhã</option>
           <option value="tarde">Tarde</option>
           <option value="noite">Noite</option>
         </select>
+
 
         <label>O que estudar:</label>
         <input
@@ -83,6 +85,7 @@ function App() {
         <button className="reset-button" onClick={resetarEstudos}>APAGAR Todos os Estudos</button>
       </div>
       
+
       {diasDaSemana.map(dia => (
        
 
@@ -90,6 +93,7 @@ function App() {
           <hr></hr>
           <h2>{dia}</h2>
         
+
           <div className="periodo-container">
             <strong>Manhã:</strong> {estudos[dia].manha}
           </div>
@@ -103,13 +107,8 @@ function App() {
       ))}
     </div>
   );
-  
-  
-
-
 }
-
 
 export default App;
 
-alert ('Bem vindo ao Gerenciador de Estudos com REACT!')
+alert ('Bem vindos ao gerenciador de Estudos com REACT!')

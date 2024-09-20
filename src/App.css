@@ -1,7 +1,7 @@
-/* Todos os commits serão comentados para facilitar a compreensão do que foi alterado */
+/* A maioria das alterações dos commits serão comentadas para facilitar a compreensão do que foi alterado */
 
 body {
-  background-color: #00aeff; 
+  background-color: #000000; 
   color: #000000;
   font-family: "Handjet", sans-serif;
   font-size:xx-large;
@@ -81,6 +81,7 @@ button {
   border-radius: 8px; /* Bordas arredondadas */
   font-size: 18px; /* Aumentado de 16px */
   transition: background-color 0.3s ease; /* Suavização na troca de cor */
+  width: 250px; /* alteração para o botão ficar da mesma largura do botão de apagar tudo (reset) */
 }
 
 button:hover {
