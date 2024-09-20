@@ -1,3 +1,5 @@
+/* Todos os commits serão comentados para facilitar a compreensão do que foi alterado */
+
 import React, { useState } from 'react';
 import './App.css';
 
@@ -17,6 +19,9 @@ function App() {
   const [atividade, setAtividade] = useState('');
   const [diaSelecionado, setDiaSelecionado] = useState('Segunda-feira');
   const [periodoSelecionado, setPeriodoSelecionado] = useState('manha');
+
+ 
+
 
   const adicionarAtividade = () => {
     if (!atividade) return;
@@ -82,11 +87,9 @@ function App() {
       ))}
     </div>
   );
+  
 }
-
-
-
-
 
 export default App;
 
+alert ('Bem vindo ao Gerenciador de Estudos com REACT!')
