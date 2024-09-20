@@ -1,6 +1,8 @@
+/* A maioria das alterações dos commits serão comentadas para facilitar a compreensão do que foi alterado */
+
 body {
-  background-color: #00aeff; 
-  color: #333;
+  background-color: #000000; 
+  color: #000000;
   font-family: "Handjet", sans-serif;
   font-size:xx-large;
   margin: 0;
@@ -12,10 +14,11 @@ body {
   
   max-width: 1000px;
   margin: 50px auto;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #000000; 
-  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  padding: 60px; /* Aumentado de 20px */
+  border-radius: 15px; /* Bordas mais arredondadas */
+  background-color: #000000; /* Cor de fundo alterada para um cinza escuro */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+
 }
 
 h1 {
@@ -25,6 +28,7 @@ h1 {
 }
 
 .input-container {
+  
   margin-bottom: 20px;
   padding: 10px;
   border: 2px solid #00ff04; 
@@ -48,7 +52,10 @@ h2 {
 label {
   display: inline-block;
   width: 100px;
-  color: #005703; 
+  color: #005703;
+ 
+
+  
 }
 
 input[type="text"],
@@ -58,6 +65,7 @@ select {
   border: 1px solid #09ff00; 
   border-radius: 5px;
   background-color: #ffffff; 
+ 
 }
 
 input[type="text"]:focus,
@@ -67,19 +75,61 @@ select:focus {
 }
 
 button {
-  background-color: #00ff04; 
+  background-color: #00ff04;
   color: rgb(0, 0, 0);
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
+  padding: 5px; /* diminuído de 10px */
+  border-radius: 8px; /* Bordas arredondadas */
+  font-size: 18px; /* Aumentado de 16px */
+  transition: background-color 0.3s ease; /* Suavização na troca de cor */
+  width: 250px; /* alteração para o botão ficar da mesma largura do botão de apagar tudo (reset) */
 }
 
 button:hover {
-  background-color: #007000; 
+  background-color: #005500; /* Nova cor ao passar o mouse */
 }
 
 hr {
-  color: #04ff00;
+  
+  border: none;            /* Remove qualquer borda padrão */
+  border-top: 2px solid #00ff00;  /* Define a cor verde para a linha */
+  margin: 20px 0;          /* Espaçamento vertical ao redor da linha */
+  margin-top: 50px;              /* Espaço extra acima da barra */
+  margin-bottom: 20px;           /* Espaço abaixo da barra */
 }
+
+/*Alterações do botão de apagar tudo(reset)*/
+.reset-button {
+  background-color: #ff0000; /* Cor de fundo vermelha */
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+width: 250px;
+}
+
+.reset-button:hover {
+  background-color: #740202;
+}
+
+/*Aqui vai ser Melhorado a visualização em dispositivos móveis adicionando o media queries para melhorar a responsividade.*/
+
+@media (max-width: 600px) {
+  .app-container {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: large;
+  }
+
+  input, select, button {
+    font-size: small;
+  }
+
+  .periodo-container {
+    font-size: small;
+  }
+}
+
+
