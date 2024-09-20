@@ -1,0 +1,85 @@
+body {
+  background-color: #00aeff; 
+  color: #333;
+  font-family: "Handjet", sans-serif;
+  font-size:xx-large;
+  margin: 0;
+  padding: 0;
+  background-image:url(../greenForest.png) ;
+}
+
+.app-container {
+  
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #000000; 
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+h1 {
+  color: #00ff22; 
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid #00ff04; 
+  border-radius: 5px;
+  background-color: #ffffff; 
+}
+
+h2 {
+  color: #26ff00; 
+  margin-bottom: 10px;
+}
+
+.periodo-container {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #00ff11; 
+  border-radius: 5px;
+  background-color: #ffffff; 
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  color: #005703; 
+}
+
+input[type="text"],
+select {
+  width: calc(100% - 110px);
+  padding: 8px;
+  border: 1px solid #09ff00; 
+  border-radius: 5px;
+  background-color: #ffffff; 
+}
+
+input[type="text"]:focus,
+select:focus {
+  border-color: #04ff00; 
+  outline: none;
+}
+
+button {
+  background-color: #00ff04; 
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #007000; 
+}
+
+hr {
+  color: #04ff00;
+}
