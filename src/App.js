@@ -4,6 +4,21 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+
+  /*Configurando o botão de apagar tudo*/ 
+  const resetarEstudos = () => {
+    setEstudos({
+      'Segunda-feira': { manha: '', tarde: '', noite: '' },
+      'Terça-feira': { manha: '', tarde: '', noite: '' },
+      'Quarta-feira': { manha: '', tarde: '', noite: '' },
+      'Quinta-feira': { manha: '', tarde: '', noite: '' },
+      'Sexta-feira': { manha: '', tarde: '', noite: '' },
+      'Sábado': { manha: '', tarde: '', noite: '' },
+      'Domingo': { manha: '', tarde: '', noite: '' },
+    });
+  };
+  
+
   const diasDaSemana = ['Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado', 'Domingo'];
 
   const [estudos, setEstudos] = useState({
@@ -65,6 +80,7 @@ function App() {
           placeholder="EX: Português"
         />
         <button onClick={adicionarAtividade}>Adicionar Estudo</button>
+        <button className="reset-button" onClick={resetarEstudos}>APAGAR Todos os Estudos</button>
       </div>
       
       {diasDaSemana.map(dia => (
@@ -88,7 +104,11 @@ function App() {
     </div>
   );
   
+  
+
+
 }
+
 
 export default App;
 
